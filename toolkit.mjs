@@ -1,3 +1,5 @@
+const toolkitHomeUrl = "https://kihiralove.github.io/kihiras-toolkit/";
+
 export function mountToolkitHeader(header) {
   const document = header.ownerDocument;
   const template = document.createElement("template");
@@ -11,11 +13,18 @@ export function mountToolkitHeader(header) {
         </svg>
       </button>
       <aside class="toolkit-sidebar" id="toolkit-sidebar" aria-labelledby="toolkit-sidebar-title" inert>
-        <h2 id="toolkit-sidebar-title">Toolkit menu</h2>
+        <h2 id="toolkit-sidebar-title">Menu</h2>
+        <nav class="toolkit-sidebar-nav" aria-labelledby="toolkit-sidebar-title">
+          <ul>
+            <li><a href="${toolkitHomeUrl}">Main page</a></li>
+            <li><a href="https://kihiralove.github.io/osrs-boss-loot-simulators/">Loot simulators and Dry calculators</a></li>
+            <li><a href="https://kihiralove.github.io/bingo-player-stats/">Player Stat Fetcher</a></li>
+          </ul>
+        </nav>
       </aside>
     </div>
     <div class="toolkit-topbar">
-      <span class="toolkit-wordmark">Kihira's Toolkit</span>
+      <a class="toolkit-wordmark" href="${toolkitHomeUrl}">Kihira's Toolkit</a>
       <a class="toolkit-kofi" href="https://ko-fi.com/KihiraLove" target="_blank"
          rel="noopener noreferrer" aria-label="Support KihiraLove on Ko-fi">
         <img src="https://storage.ko-fi.com/cdn/cup-border.png" alt="" width="24" height="24">
