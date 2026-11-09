@@ -1,5 +1,7 @@
 # Kihira's Toolkit shared UI
 
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-Support%20me-29ABE0?logo=ko-fi&logoColor=white)](https://ko-fi.com/KihiraLove)
+
 The toolkit provides a base theme and shared page layout for static sites.
 
 - Load `toolkit.css` before your tool's stylesheet. It supplies the dark palette, typography, focus styles, `.panel` cards, and the column layout that keeps the footer at the bottom. Use `.toolkit-container` to align your content with the header and footer.

@@ -19,6 +19,7 @@ export function mountToolkitHeader(header) {
             <li><a href="${toolkitHomeUrl}">Main page</a></li>
             <li><a href="https://kihiralove.github.io/osrs-boss-loot-simulators/">Loot simulators and Dry calculators</a></li>
             <li><a href="https://kihiralove.github.io/bingo-player-stats/">Player Stat Fetcher</a></li>
+            <li><a href="https://kihiralove.github.io/slayer-blocks/">Slayer Task Blocks</a></li>
           </ul>
         </nav>
       </aside>
