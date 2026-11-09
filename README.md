@@ -9,3 +9,4 @@ The toolkit provides a base theme and shared page layout for static sites.
 - Put the site's source and privacy information inside `<div class="toolkit-footer-info">` in the footer. Call `mountToolkitFooter(footer, { githubUrl })` with the tool's GitHub URL. Sites with cookie settings can also pass their existing button as `cookieSettings`.
 
 Use `@container toolkit-page (max-width: …)` for layout breakpoints that should respond to the space left when the menu opens. A tool stylesheet can override the theme variables and `--toolkit-width` as needed.
+Sites that save configuration can import `mountToolkitCookiePreferences` from `cookies.mjs`. Pass distinct consent and configuration cookie names, the banner description, and a `getConfig` callback. Restore the returned `config`, pass `settingsButton` as `cookieSettings` to the footer, and call `save()` when settings change.
